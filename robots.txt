@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sakibulislam.pro.bd/sitemap.xml

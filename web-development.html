@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Web Development Services | Sakibul Islam</title>
+
+    <meta
+      name="description"
+      content="High-performance business and corporate website creation."
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-[#0A1128] text-slate-200 antialiased flex flex-col min-h-screen"
+  >
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-[#0A1128]/90 backdrop-blur-md border-b border-white/10"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 rounded-lg bg-blue-600/20 flex items-center justify-center border border-blue-500/50 group-hover:bg-blue-600/30 transition-colors"
+            >
+              <svg
+                class="text-blue-400 w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <span
+              class="text-white font-bold text-xl tracking-tight hidden sm:block"
+              >Sakibul Islam</span
+            >
+          </a>
+          <div class="hidden md:flex ml-10 space-x-1 lg:space-x-4 items-center">
+            <a
+              href="index.html"
+              class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-colors"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-colors"
+              >About</a
+            >
+            <a
+              href="services.html"
+              class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-colors"
+              >Services</a
+            >
+            <a
+              href="skills.html"
+              class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-colors"
+              >Skills</a
+            >
+            <a
+              href="portfolio.html"
+              class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-colors"
+              >Portfolio</a
+            >
+            <a
+              href="blog.html"
+              class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-colors"
+              >Blog</a
+            >
+            <a
+              href="contact.html"
+              class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-colors"
+              >Contact</a
+            >
+            <a
+              href="hire-me.html"
+              class="ml-4 px-5 py-2.5 rounded-md text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 shadow-[0_0_20px_rgba(37,99,235,0.2)] transition-colors"
+              >Hire Me</a
+            >
+          </div>
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 text-slate-300 hover:text-white"
+          >
+            <svg
+              id="menu-icon"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#0A1128] border-b border-white/10 px-4 pt-2 pb-4 space-y-1"
+      >
+        <a
+          href="index.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300"
+          >About</a
+        >
+        <a
+          href="services.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300"
+          >Services</a
+        >
+        <a
+          href="skills.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300"
+          >Skills</a
+        >
+        <a
+          href="portfolio.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300"
+          >Portfolio</a
+        >
+        <a
+          href="blog.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300"
+          >Blog</a
+        >
+        <a
+          href="contact.html"
+          class="block px-3 py-2 rounded-md text-base font-medium text-slate-300"
+          >Contact</a
+        >
+        <a
+          href="hire-me.html"
+          class="block px-3 py-2 mt-4 rounded-md text-base font-medium bg-blue-600 text-white text-center"
+          >Hire Me</a
+        >
+      </div>
+    </nav>
+
+    <main
+      class="flex-1 pt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full pb-24 text-slate-300"
+    >
+      <div class="py-12">
+        <h1
+          class="text-4xl md:text-5xl font-bold text-white mb-6 font-display tracking-tight"
+        >
+          Web Development Services
+        </h1>
+
+        <p class="text-xl text-slate-400 max-w-2xl mb-12">
+          High-performance business and corporate website creation.
+        </p>
+
+        <div class="prose prose-invert prose-lg max-w-none">
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              High-Performance Modern Web Architectures
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              The traditional monolithic CMS architecture is rapidly becoming
+              functionally obsolete for high-traffic environments. Deploying
+              platforms using Static Site Generation (SSG) or Incremental Static
+              Regeneration (ISR) ensures that final HTML output is served
+              instantaneously via global edge nodes. This complete bypass of
+              standard database-query bottlenecks fundamentally eliminates
+              Server Response delays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Utilizing frameworks such as Next.js, Nuxt, or Astro entirely
+              decouples the frontend rendering layer from the backend database
+              environment (Headless CMS). This architectural evolution provides
+              profound security benefits, mitigating SQL injection attack
+              vectors completely while enforcing an immutable deployment
+              pipeline.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              By distributing static assets across a Content Delivery Network
+              (CDN), we guarantee that a user connecting from Tokyo receives the
+              identical millisecond load times as a user connecting from New
+              York. This infrastructure effortlessly absorbs sudden, massive
+              spikes in concurrent traffic without infrastructure scaling
+              crises.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Precision Interface Engineering and Accessibility
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              A fast application remains inadequate if it cannot be utilized
+              universally. Strict adherence to the Web Content Accessibility
+              Guidelines (WCAG) ensures that digital products are fully operable
+              by individuals using assistive technologies like screen readers or
+              keyboard-only navigation arrays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Engineering these interfaces dictates utilizing strictly semantic
+              HTML elements. Relying solely on &lt;div&gt; matrices damages
+              structural outlines completely. Proper focus management, ARIA
+              landmark roles, and highly legible color contrast algorithms are
+              woven directly into the core engineering phase.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Moreover, interface states—hover, focus, active, disabled—are
+              comprehensively defined to reduce cognitive friction. By
+              implementing smooth CSS-driven transforms and reducing
+              JavaScript-induced main-thread blocking, the interface responds
+              instinctively to user biometric inputs.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Database Architecture and API Ecosystems
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Complex corporate applications require highly normalized,
+              fault-tolerant database schemas capable of lightning-fast
+              Read/Write operations. Implementing PostgreSQL with Prisma ORM or
+              leveraging horizontally scalable NoSQL documents like MongoDB
+              guarantees precise data retrieval.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              These backend systems communicate seamlessly strictly via
+              rigorously documented RESTful endpoints or GraphQL schemas.
+              GraphQL specific implementations eliminate over-fetching by
+              allowing the client side to request precise data parameters
+              strictly when necessary.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Securing these API endpoints involves robust JSON Web Token (JWT)
+              authentication, rate limiting mechanisms, and cross-origin
+              resource sharing (CORS) enforcement. The resulting ecosystem is
+              entirely decoupled, infinitely scalable, and relentlessly secure
+              against unauthorized external access.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Version Control and CI/CD Pipeline Automation
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Enterprise software engineering relies entirely on synchronized
+              source control and automated integration pipelines. Utilizing Git
+              alongside robust branching topologies ensures that chaotic code
+              overwrites are entirely eliminated.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Continuous Integration (CI) and Continuous Deployment (CD)
+              pipelines powered by GitHub Actions or GitLab CI immediately
+              execute comprehensive Unit and End-to-End Test suites the moment
+              new commits are pushed. If tests fail, the build is automatically
+              rejected.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This automated validation ensures that main production branches
+              remain fundamentally stable at all times. Once validated, preview
+              deployments are generated automatically, allowing stakeholders
+              absolute visual oversight prior to the final merger into the live
+              production environment.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Modular Styling and Utility-First Optimization
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Legacy applications frequently suffer from cascading style sheet
+              bloat resulting in deeply unpredictable scoping conflicts.
+              Utility-first frameworks such as Tailwind CSS resolve this
+              entirely by enforcing strict, isolated class combinations directly
+              within the markup.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Using Just-In-Time (JIT) compilation processes, only the specific
+              utility classes executed within the HTML are compiled into the
+              final CSS packet. This strategy routinely compresses global style
+              payloads to under 10 kilobytes, drastically accelerating critical
+              rendering paths.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This approach natively supports Design Tokens, ensuring that
+              corporate typography, color algorithms, and spacing hierarchies
+              are mathematically maintained across the entirety of the
+              application scale without localized deviations.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              High-Performance Modern Web Architectures
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              The traditional monolithic CMS architecture is rapidly becoming
+              functionally obsolete for high-traffic environments. Deploying
+              platforms using Static Site Generation (SSG) or Incremental Static
+              Regeneration (ISR) ensures that final HTML output is served
+              instantaneously via global edge nodes. This complete bypass of
+              standard database-query bottlenecks fundamentally eliminates
+              Server Response delays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Utilizing frameworks such as Next.js, Nuxt, or Astro entirely
+              decouples the frontend rendering layer from the backend database
+              environment (Headless CMS). This architectural evolution provides
+              profound security benefits, mitigating SQL injection attack
+              vectors completely while enforcing an immutable deployment
+              pipeline.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              By distributing static assets across a Content Delivery Network
+              (CDN), we guarantee that a user connecting from Tokyo receives the
+              identical millisecond load times as a user connecting from New
+              York. This infrastructure effortlessly absorbs sudden, massive
+              spikes in concurrent traffic without infrastructure scaling
+              crises.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Precision Interface Engineering and Accessibility
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              A fast application remains inadequate if it cannot be utilized
+              universally. Strict adherence to the Web Content Accessibility
+              Guidelines (WCAG) ensures that digital products are fully operable
+              by individuals using assistive technologies like screen readers or
+              keyboard-only navigation arrays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Engineering these interfaces dictates utilizing strictly semantic
+              HTML elements. Relying solely on &lt;div&gt; matrices damages
+              structural outlines completely. Proper focus management, ARIA
+              landmark roles, and highly legible color contrast algorithms are
+              woven directly into the core engineering phase.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Moreover, interface states—hover, focus, active, disabled—are
+              comprehensively defined to reduce cognitive friction. By
+              implementing smooth CSS-driven transforms and reducing
+              JavaScript-induced main-thread blocking, the interface responds
+              instinctively to user biometric inputs.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Database Architecture and API Ecosystems
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Complex corporate applications require highly normalized,
+              fault-tolerant database schemas capable of lightning-fast
+              Read/Write operations. Implementing PostgreSQL with Prisma ORM or
+              leveraging horizontally scalable NoSQL documents like MongoDB
+              guarantees precise data retrieval.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              These backend systems communicate seamlessly strictly via
+              rigorously documented RESTful endpoints or GraphQL schemas.
+              GraphQL specific implementations eliminate over-fetching by
+              allowing the client side to request precise data parameters
+              strictly when necessary.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Securing these API endpoints involves robust JSON Web Token (JWT)
+              authentication, rate limiting mechanisms, and cross-origin
+              resource sharing (CORS) enforcement. The resulting ecosystem is
+              entirely decoupled, infinitely scalable, and relentlessly secure
+              against unauthorized external access.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Version Control and CI/CD Pipeline Automation
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Enterprise software engineering relies entirely on synchronized
+              source control and automated integration pipelines. Utilizing Git
+              alongside robust branching topologies ensures that chaotic code
+              overwrites are entirely eliminated.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Continuous Integration (CI) and Continuous Deployment (CD)
+              pipelines powered by GitHub Actions or GitLab CI immediately
+              execute comprehensive Unit and End-to-End Test suites the moment
+              new commits are pushed. If tests fail, the build is automatically
+              rejected.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This automated validation ensures that main production branches
+              remain fundamentally stable at all times. Once validated, preview
+              deployments are generated automatically, allowing stakeholders
+              absolute visual oversight prior to the final merger into the live
+              production environment.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Modular Styling and Utility-First Optimization
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Legacy applications frequently suffer from cascading style sheet
+              bloat resulting in deeply unpredictable scoping conflicts.
+              Utility-first frameworks such as Tailwind CSS resolve this
+              entirely by enforcing strict, isolated class combinations directly
+              within the markup.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Using Just-In-Time (JIT) compilation processes, only the specific
+              utility classes executed within the HTML are compiled into the
+              final CSS packet. This strategy routinely compresses global style
+              payloads to under 10 kilobytes, drastically accelerating critical
+              rendering paths.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This approach natively supports Design Tokens, ensuring that
+              corporate typography, color algorithms, and spacing hierarchies
+              are mathematically maintained across the entirety of the
+              application scale without localized deviations.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              High-Performance Modern Web Architectures
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              The traditional monolithic CMS architecture is rapidly becoming
+              functionally obsolete for high-traffic environments. Deploying
+              platforms using Static Site Generation (SSG) or Incremental Static
+              Regeneration (ISR) ensures that final HTML output is served
+              instantaneously via global edge nodes. This complete bypass of
+              standard database-query bottlenecks fundamentally eliminates
+              Server Response delays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Utilizing frameworks such as Next.js, Nuxt, or Astro entirely
+              decouples the frontend rendering layer from the backend database
+              environment (Headless CMS). This architectural evolution provides
+              profound security benefits, mitigating SQL injection attack
+              vectors completely while enforcing an immutable deployment
+              pipeline.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              By distributing static assets across a Content Delivery Network
+              (CDN), we guarantee that a user connecting from Tokyo receives the
+              identical millisecond load times as a user connecting from New
+              York. This infrastructure effortlessly absorbs sudden, massive
+              spikes in concurrent traffic without infrastructure scaling
+              crises.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Precision Interface Engineering and Accessibility
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              A fast application remains inadequate if it cannot be utilized
+              universally. Strict adherence to the Web Content Accessibility
+              Guidelines (WCAG) ensures that digital products are fully operable
+              by individuals using assistive technologies like screen readers or
+              keyboard-only navigation arrays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Engineering these interfaces dictates utilizing strictly semantic
+              HTML elements. Relying solely on &lt;div&gt; matrices damages
+              structural outlines completely. Proper focus management, ARIA
+              landmark roles, and highly legible color contrast algorithms are
+              woven directly into the core engineering phase.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Moreover, interface states—hover, focus, active, disabled—are
+              comprehensively defined to reduce cognitive friction. By
+              implementing smooth CSS-driven transforms and reducing
+              JavaScript-induced main-thread blocking, the interface responds
+              instinctively to user biometric inputs.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Database Architecture and API Ecosystems
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Complex corporate applications require highly normalized,
+              fault-tolerant database schemas capable of lightning-fast
+              Read/Write operations. Implementing PostgreSQL with Prisma ORM or
+              leveraging horizontally scalable NoSQL documents like MongoDB
+              guarantees precise data retrieval.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              These backend systems communicate seamlessly strictly via
+              rigorously documented RESTful endpoints or GraphQL schemas.
+              GraphQL specific implementations eliminate over-fetching by
+              allowing the client side to request precise data parameters
+              strictly when necessary.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Securing these API endpoints involves robust JSON Web Token (JWT)
+              authentication, rate limiting mechanisms, and cross-origin
+              resource sharing (CORS) enforcement. The resulting ecosystem is
+              entirely decoupled, infinitely scalable, and relentlessly secure
+              against unauthorized external access.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Version Control and CI/CD Pipeline Automation
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Enterprise software engineering relies entirely on synchronized
+              source control and automated integration pipelines. Utilizing Git
+              alongside robust branching topologies ensures that chaotic code
+              overwrites are entirely eliminated.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Continuous Integration (CI) and Continuous Deployment (CD)
+              pipelines powered by GitHub Actions or GitLab CI immediately
+              execute comprehensive Unit and End-to-End Test suites the moment
+              new commits are pushed. If tests fail, the build is automatically
+              rejected.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This automated validation ensures that main production branches
+              remain fundamentally stable at all times. Once validated, preview
+              deployments are generated automatically, allowing stakeholders
+              absolute visual oversight prior to the final merger into the live
+              production environment.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Modular Styling and Utility-First Optimization
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Legacy applications frequently suffer from cascading style sheet
+              bloat resulting in deeply unpredictable scoping conflicts.
+              Utility-first frameworks such as Tailwind CSS resolve this
+              entirely by enforcing strict, isolated class combinations directly
+              within the markup.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Using Just-In-Time (JIT) compilation processes, only the specific
+              utility classes executed within the HTML are compiled into the
+              final CSS packet. This strategy routinely compresses global style
+              payloads to under 10 kilobytes, drastically accelerating critical
+              rendering paths.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This approach natively supports Design Tokens, ensuring that
+              corporate typography, color algorithms, and spacing hierarchies
+              are mathematically maintained across the entirety of the
+              application scale without localized deviations.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              High-Performance Modern Web Architectures
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              The traditional monolithic CMS architecture is rapidly becoming
+              functionally obsolete for high-traffic environments. Deploying
+              platforms using Static Site Generation (SSG) or Incremental Static
+              Regeneration (ISR) ensures that final HTML output is served
+              instantaneously via global edge nodes. This complete bypass of
+              standard database-query bottlenecks fundamentally eliminates
+              Server Response delays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Utilizing frameworks such as Next.js, Nuxt, or Astro entirely
+              decouples the frontend rendering layer from the backend database
+              environment (Headless CMS). This architectural evolution provides
+              profound security benefits, mitigating SQL injection attack
+              vectors completely while enforcing an immutable deployment
+              pipeline.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              By distributing static assets across a Content Delivery Network
+              (CDN), we guarantee that a user connecting from Tokyo receives the
+              identical millisecond load times as a user connecting from New
+              York. This infrastructure effortlessly absorbs sudden, massive
+              spikes in concurrent traffic without infrastructure scaling
+              crises.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Precision Interface Engineering and Accessibility
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              A fast application remains inadequate if it cannot be utilized
+              universally. Strict adherence to the Web Content Accessibility
+              Guidelines (WCAG) ensures that digital products are fully operable
+              by individuals using assistive technologies like screen readers or
+              keyboard-only navigation arrays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Engineering these interfaces dictates utilizing strictly semantic
+              HTML elements. Relying solely on &lt;div&gt; matrices damages
+              structural outlines completely. Proper focus management, ARIA
+              landmark roles, and highly legible color contrast algorithms are
+              woven directly into the core engineering phase.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Moreover, interface states—hover, focus, active, disabled—are
+              comprehensively defined to reduce cognitive friction. By
+              implementing smooth CSS-driven transforms and reducing
+              JavaScript-induced main-thread blocking, the interface responds
+              instinctively to user biometric inputs.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Database Architecture and API Ecosystems
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Complex corporate applications require highly normalized,
+              fault-tolerant database schemas capable of lightning-fast
+              Read/Write operations. Implementing PostgreSQL with Prisma ORM or
+              leveraging horizontally scalable NoSQL documents like MongoDB
+              guarantees precise data retrieval.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              These backend systems communicate seamlessly strictly via
+              rigorously documented RESTful endpoints or GraphQL schemas.
+              GraphQL specific implementations eliminate over-fetching by
+              allowing the client side to request precise data parameters
+              strictly when necessary.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Securing these API endpoints involves robust JSON Web Token (JWT)
+              authentication, rate limiting mechanisms, and cross-origin
+              resource sharing (CORS) enforcement. The resulting ecosystem is
+              entirely decoupled, infinitely scalable, and relentlessly secure
+              against unauthorized external access.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Version Control and CI/CD Pipeline Automation
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Enterprise software engineering relies entirely on synchronized
+              source control and automated integration pipelines. Utilizing Git
+              alongside robust branching topologies ensures that chaotic code
+              overwrites are entirely eliminated.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Continuous Integration (CI) and Continuous Deployment (CD)
+              pipelines powered by GitHub Actions or GitLab CI immediately
+              execute comprehensive Unit and End-to-End Test suites the moment
+              new commits are pushed. If tests fail, the build is automatically
+              rejected.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This automated validation ensures that main production branches
+              remain fundamentally stable at all times. Once validated, preview
+              deployments are generated automatically, allowing stakeholders
+              absolute visual oversight prior to the final merger into the live
+              production environment.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Modular Styling and Utility-First Optimization
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Legacy applications frequently suffer from cascading style sheet
+              bloat resulting in deeply unpredictable scoping conflicts.
+              Utility-first frameworks such as Tailwind CSS resolve this
+              entirely by enforcing strict, isolated class combinations directly
+              within the markup.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Using Just-In-Time (JIT) compilation processes, only the specific
+              utility classes executed within the HTML are compiled into the
+              final CSS packet. This strategy routinely compresses global style
+              payloads to under 10 kilobytes, drastically accelerating critical
+              rendering paths.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This approach natively supports Design Tokens, ensuring that
+              corporate typography, color algorithms, and spacing hierarchies
+              are mathematically maintained across the entirety of the
+              application scale without localized deviations.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              High-Performance Modern Web Architectures
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              The traditional monolithic CMS architecture is rapidly becoming
+              functionally obsolete for high-traffic environments. Deploying
+              platforms using Static Site Generation (SSG) or Incremental Static
+              Regeneration (ISR) ensures that final HTML output is served
+              instantaneously via global edge nodes. This complete bypass of
+              standard database-query bottlenecks fundamentally eliminates
+              Server Response delays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Utilizing frameworks such as Next.js, Nuxt, or Astro entirely
+              decouples the frontend rendering layer from the backend database
+              environment (Headless CMS). This architectural evolution provides
+              profound security benefits, mitigating SQL injection attack
+              vectors completely while enforcing an immutable deployment
+              pipeline.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              By distributing static assets across a Content Delivery Network
+              (CDN), we guarantee that a user connecting from Tokyo receives the
+              identical millisecond load times as a user connecting from New
+              York. This infrastructure effortlessly absorbs sudden, massive
+              spikes in concurrent traffic without infrastructure scaling
+              crises.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Precision Interface Engineering and Accessibility
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              A fast application remains inadequate if it cannot be utilized
+              universally. Strict adherence to the Web Content Accessibility
+              Guidelines (WCAG) ensures that digital products are fully operable
+              by individuals using assistive technologies like screen readers or
+              keyboard-only navigation arrays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Engineering these interfaces dictates utilizing strictly semantic
+              HTML elements. Relying solely on &lt;div&gt; matrices damages
+              structural outlines completely. Proper focus management, ARIA
+              landmark roles, and highly legible color contrast algorithms are
+              woven directly into the core engineering phase.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Moreover, interface states—hover, focus, active, disabled—are
+              comprehensively defined to reduce cognitive friction. By
+              implementing smooth CSS-driven transforms and reducing
+              JavaScript-induced main-thread blocking, the interface responds
+              instinctively to user biometric inputs.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Database Architecture and API Ecosystems
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Complex corporate applications require highly normalized,
+              fault-tolerant database schemas capable of lightning-fast
+              Read/Write operations. Implementing PostgreSQL with Prisma ORM or
+              leveraging horizontally scalable NoSQL documents like MongoDB
+              guarantees precise data retrieval.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              These backend systems communicate seamlessly strictly via
+              rigorously documented RESTful endpoints or GraphQL schemas.
+              GraphQL specific implementations eliminate over-fetching by
+              allowing the client side to request precise data parameters
+              strictly when necessary.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Securing these API endpoints involves robust JSON Web Token (JWT)
+              authentication, rate limiting mechanisms, and cross-origin
+              resource sharing (CORS) enforcement. The resulting ecosystem is
+              entirely decoupled, infinitely scalable, and relentlessly secure
+              against unauthorized external access.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Version Control and CI/CD Pipeline Automation
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Enterprise software engineering relies entirely on synchronized
+              source control and automated integration pipelines. Utilizing Git
+              alongside robust branching topologies ensures that chaotic code
+              overwrites are entirely eliminated.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Continuous Integration (CI) and Continuous Deployment (CD)
+              pipelines powered by GitHub Actions or GitLab CI immediately
+              execute comprehensive Unit and End-to-End Test suites the moment
+              new commits are pushed. If tests fail, the build is automatically
+              rejected.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This automated validation ensures that main production branches
+              remain fundamentally stable at all times. Once validated, preview
+              deployments are generated automatically, allowing stakeholders
+              absolute visual oversight prior to the final merger into the live
+              production environment.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Modular Styling and Utility-First Optimization
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Legacy applications frequently suffer from cascading style sheet
+              bloat resulting in deeply unpredictable scoping conflicts.
+              Utility-first frameworks such as Tailwind CSS resolve this
+              entirely by enforcing strict, isolated class combinations directly
+              within the markup.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Using Just-In-Time (JIT) compilation processes, only the specific
+              utility classes executed within the HTML are compiled into the
+              final CSS packet. This strategy routinely compresses global style
+              payloads to under 10 kilobytes, drastically accelerating critical
+              rendering paths.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This approach natively supports Design Tokens, ensuring that
+              corporate typography, color algorithms, and spacing hierarchies
+              are mathematically maintained across the entirety of the
+              application scale without localized deviations.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              High-Performance Modern Web Architectures
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              The traditional monolithic CMS architecture is rapidly becoming
+              functionally obsolete for high-traffic environments. Deploying
+              platforms using Static Site Generation (SSG) or Incremental Static
+              Regeneration (ISR) ensures that final HTML output is served
+              instantaneously via global edge nodes. This complete bypass of
+              standard database-query bottlenecks fundamentally eliminates
+              Server Response delays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Utilizing frameworks such as Next.js, Nuxt, or Astro entirely
+              decouples the frontend rendering layer from the backend database
+              environment (Headless CMS). This architectural evolution provides
+              profound security benefits, mitigating SQL injection attack
+              vectors completely while enforcing an immutable deployment
+              pipeline.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              By distributing static assets across a Content Delivery Network
+              (CDN), we guarantee that a user connecting from Tokyo receives the
+              identical millisecond load times as a user connecting from New
+              York. This infrastructure effortlessly absorbs sudden, massive
+              spikes in concurrent traffic without infrastructure scaling
+              crises.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Precision Interface Engineering and Accessibility
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              A fast application remains inadequate if it cannot be utilized
+              universally. Strict adherence to the Web Content Accessibility
+              Guidelines (WCAG) ensures that digital products are fully operable
+              by individuals using assistive technologies like screen readers or
+              keyboard-only navigation arrays.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Engineering these interfaces dictates utilizing strictly semantic
+              HTML elements. Relying solely on &lt;div&gt; matrices damages
+              structural outlines completely. Proper focus management, ARIA
+              landmark roles, and highly legible color contrast algorithms are
+              woven directly into the core engineering phase.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Moreover, interface states—hover, focus, active, disabled—are
+              comprehensively defined to reduce cognitive friction. By
+              implementing smooth CSS-driven transforms and reducing
+              JavaScript-induced main-thread blocking, the interface responds
+              instinctively to user biometric inputs.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Database Architecture and API Ecosystems
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Complex corporate applications require highly normalized,
+              fault-tolerant database schemas capable of lightning-fast
+              Read/Write operations. Implementing PostgreSQL with Prisma ORM or
+              leveraging horizontally scalable NoSQL documents like MongoDB
+              guarantees precise data retrieval.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              These backend systems communicate seamlessly strictly via
+              rigorously documented RESTful endpoints or GraphQL schemas.
+              GraphQL specific implementations eliminate over-fetching by
+              allowing the client side to request precise data parameters
+              strictly when necessary.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Securing these API endpoints involves robust JSON Web Token (JWT)
+              authentication, rate limiting mechanisms, and cross-origin
+              resource sharing (CORS) enforcement. The resulting ecosystem is
+              entirely decoupled, infinitely scalable, and relentlessly secure
+              against unauthorized external access.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Version Control and CI/CD Pipeline Automation
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Enterprise software engineering relies entirely on synchronized
+              source control and automated integration pipelines. Utilizing Git
+              alongside robust branching topologies ensures that chaotic code
+              overwrites are entirely eliminated.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Continuous Integration (CI) and Continuous Deployment (CD)
+              pipelines powered by GitHub Actions or GitLab CI immediately
+              execute comprehensive Unit and End-to-End Test suites the moment
+              new commits are pushed. If tests fail, the build is automatically
+              rejected.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This automated validation ensures that main production branches
+              remain fundamentally stable at all times. Once validated, preview
+              deployments are generated automatically, allowing stakeholders
+              absolute visual oversight prior to the final merger into the live
+              production environment.
+            </p>
+          </div>
+          <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white mb-6">
+              Modular Styling and Utility-First Optimization
+            </h3>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Legacy applications frequently suffer from cascading style sheet
+              bloat resulting in deeply unpredictable scoping conflicts.
+              Utility-first frameworks such as Tailwind CSS resolve this
+              entirely by enforcing strict, isolated class combinations directly
+              within the markup.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              Using Just-In-Time (JIT) compilation processes, only the specific
+              utility classes executed within the HTML are compiled into the
+              final CSS packet. This strategy routinely compresses global style
+              payloads to under 10 kilobytes, drastically accelerating critical
+              rendering paths.
+            </p>
+            <p class="text-slate-400 mb-4 leading-relaxed">
+              This approach natively supports Design Tokens, ensuring that
+              corporate typography, color algorithms, and spacing hierarchies
+              are mathematically maintained across the entirety of the
+              application scale without localized deviations.
+            </p>
+          </div>
+
+          <div class="space-y-12">
+            <!-- Hero / Intro -->
+            <div
+              class="bg-[#0A1128] border border-white/5 p-8 md:p-12 rounded-2xl"
+            >
+              <h2 class="text-3xl font-bold text-white mb-6 font-display">
+                Premium Web Development Architecture For Scale
+              </h2>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                A corporate website is much more than an aesthetic brochure; it
+                is the central nervous system of your entire digital operation.
+                As a seasoned Web Developer, I engineer high-performance
+                platforms designed fundamentally around speed, strict security
+                protocols, complete accessibility, and semantic code
+                architecture. Whether you require a hyper-fast static site
+                generator deployment or a robust single-page application (SPA),
+                I output resilient codebases capable of handling vast traffic
+                volumes.
+              </p>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                Today's users have zero tolerance for latency. Every unoptimized
+                asset or bulky JavaScript bundle results in dropped sessions and
+                lost revenue. By leveraging modular styling, modern JavaScript
+                paradigms, headless architectures, and edge-deployed CDNs, I
+                guarantee seamless interactive journeys across all mobile,
+                tablet, and desktop viewports simultaneously.
+              </p>
+            </div>
+            <div class="ad-placeholder mb-12 hidden md:flex">
+              <span>CONTENT AD AREA - PASTE ADSENSE CODE HERE</span>
+            </div>
+            <!-- Performance Core -->
+            <div
+              class="bg-[#0A1128] border border-white/5 p-8 md:p-12 rounded-2xl"
+            >
+              <h3 class="text-2xl font-bold text-white mb-6">
+                Uncompromising Performance Engineering
+              </h3>
+              <p class="text-slate-400 leading-relaxed mb-4">
+                Performance isn't an afterthought; it is woven into the very
+                fabric of my development pipeline. I treat the browser's main
+                thread with the utmost respect, constantly profiling memory
+                consumption, parse times, and render-blocking resources.
+              </p>
+              <ul class="list-disc pl-6 space-y-4 text-slate-400 mb-6">
+                <li>
+                  <strong class="text-white"
+                    >Static Site Generation (SSG) & Headless
+                    Architectures:</strong
+                  >
+                  Delivering pre-compiled HTML globally via edge networks
+                  practically eliminates TTFB (Time To First Byte) delays,
+                  ensuring instant loads even on low-bandwidth 3G mobile
+                  connections.
+                </li>
+                <li>
+                  <strong class="text-white"
+                    >Asset Optimization & Next-Gen Formats:</strong
+                  >
+                  Utilizing WEBP/AVIF image formats alongside intrinsic sizing
+                  techniques prevents layout shifts. Furthermore, aggressive
+                  tree-shaking drops dead code logic from CSS and JavaScript
+                  bundles.
+                </li>
+                <li>
+                  <strong class="text-white">Strict Semantic HTML5:</strong>
+                  Div-soup damages both accessibility standards and
+                  machine-readability. Employing accurate, document-outlined
+                  tags (&lt;main&gt;, &lt;article&gt;, &lt;section&gt;,
+                  &lt;aside&gt;) ensures assistive technologies like screen
+                  readers operate flawlessly.
+                </li>
+                <li>
+                  <strong class="text-white"
+                    >Fluid Responsive Design Implementation:</strong
+                  >
+                  Relying on purely CSS-driven clamp algorithms rather than
+                  fragile breakpoint logic. This results in smooth typographical
+                  scaling across every conceivable device dimension.
+                </li>
+              </ul>
+            </div>
+            <!-- UI / UX Engineering -->
+            <div
+              class="bg-[#0A1128] border border-white/5 p-8 md:p-12 rounded-2xl"
+            >
+              <h3 class="text-2xl font-bold text-white mb-6">
+                Conversion-Rate Optimized Interface Assembly
+              </h3>
+              <p class="text-slate-400 leading-relaxed mb-4">
+                The bridge between a visitor and a customer is constructed
+                entirely from User Experience (UX) and User Interface (UI)
+                decisions. A fast site still fails if the inherent funnel logic
+                is obstructed by cognitive friction or poor contrast ratios.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-[#050B14] p-6 rounded-xl border border-white/5">
+                  <h4 class="text-lg font-semibold text-blue-400 mb-3">
+                    Frictionless Checkouts
+                  </h4>
+                  <p class="text-sm text-slate-400 leading-relaxed">
+                    By distilling forms down to essential inputs, utilizing
+                    browser autocomplete attributes, and employing inline
+                    validation parameters, cart-abandonment rates are
+                    systematically compressed.
+                  </p>
+                </div>
+                <div class="bg-[#050B14] p-6 rounded-xl border border-white/5">
+                  <h4 class="text-lg font-semibold text-blue-400 mb-3">
+                    Micro-Interactions
+                  </h4>
+                  <p class="text-sm text-slate-400 leading-relaxed">
+                    Visual feedback confirms state-changes. Whether utilizing
+                    subtle background transitions, skeleton loaders during
+                    network requests, or focus-state rings, users remain firmly
+                    anchored in context.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Security & Scalability -->
+            <div
+              class="bg-[#0A1128] border border-white/5 p-8 md:p-12 rounded-2xl"
+            >
+              <h3 class="text-2xl font-bold text-white mb-6">
+                Security Hardening & Enterprise Scalability
+              </h3>
+              <p class="text-slate-400 leading-relaxed mb-4">
+                Modern corporate platforms face relentless automated probing and
+                bot traffic. Securing a platform mandates proactive defense
+                architecture right at the edge routing layer.
+              </p>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                I rigorously apply CSP (Content Security Policy) headers to
+                prevent XSS (Cross-Site Scripting) vectors, enforce strict
+                transport security (HSTS), and decouple database access layers
+                entirely from public-facing rendering engines. For fully
+                decoupled static architectures like English Garden or Iron
+                Nation BD, the exposure surface is effectively reduced to
+                absolute zero, rendering traditional WordPress-style injection
+                attacks impossible.
+              </p>
+            </div>
+            <div class="ad-placeholder mb-12 hidden md:flex">
+              <span>CONTENT AD AREA - PASTE ADSENSE CODE HERE</span>
+            </div>
+            <!-- Frequently Asked Questions -->
+            <div
+              class="bg-[#0A1128] border border-white/5 p-8 md:p-12 rounded-2xl"
+            >
+              <h3
+                class="text-2xl font-bold text-white mb-8 border-b border-white/10 pb-4"
+              >
+                Frequently Asked Questions (Development)
+              </h3>
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-lg font-medium text-white mb-2">
+                    What tech stacks do you utilize most frequently?
+                  </h4>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    I utilize purely modern paradigms—HTML5, vanilla JavaScript
+                    ES6+, robust serverless infrastructures, and utility-first
+                    frameworks like Tailwind CSS. My methodology avoids heavy,
+                    legacy CMS platforms (like bloated WP themes) favored by
+                    cheap developers to guarantee precision performance.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium text-white mb-2">
+                    Are your websites accessible and ADA compliant?
+                  </h4>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Absolutely. I test extensively against WCAG standards. This
+                    includes maintaining proper contrast ratios, employing
+                    WAI-ARIA roles where necessary, and ensuring all primary
+                    workflows can be executed exclusively via keyboard
+                    navigation.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium text-white mb-2">
+                    Do you provide ongoing maintenance SLAs?
+                  </h4>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Yes. However, the exact advantage of a static or decoupled
+                    architecture is a drastic reduction in necessary
+                    maintenance. You no longer require daily plugin updates or
+                    constant localized patch deployment cycles to mitigate
+                    zero-day vulnerabilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Call to Action -->
+            <div
+              class="bg-blue-900/20 border border-blue-500/30 p-8 md:p-12 rounded-2xl text-center"
+            >
+              <h3 class="text-2xl font-bold text-white mb-4">
+                Rebuild Your Platform The Right Way
+              </h3>
+              <p
+                class="text-blue-100/70 leading-relaxed mb-8 max-w-2xl mx-auto"
+              >
+                Experience drastic improvements in conversion rates, speed
+                metrics, and security. Secure a fast, fully custom,
+                search-optimized platform by requesting a development
+                consultation now.
+              </p>
+              <a
+                href="contact.html"
+                class="inline-block px-8 py-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]"
+                >Initiate Project Discovery</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-[#050B14] pt-16 pb-8 border-t border-white/5 mt-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="ad-placeholder mb-12">
+          <span>FOOTER AD AREA - PASTE ADSENSE CODE HERE</span>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+        >
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4 tracking-tight">
+              Sakibul Islam
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Premium Digital Marketer & Web Developer based in Bangladesh.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-slate-400 hover:text-white text-sm"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-slate-400 hover:text-white text-sm"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="portfolio.html"
+                  class="text-slate-400 hover:text-white text-sm"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-slate-400 hover:text-white text-sm"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-5">Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="seo-services.html"
+                  class="text-slate-400 hover:text-white text-sm"
+                  >SEO Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="web-development.html"
+                  class="text-slate-400 hover:text-white text-sm"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="digital-marketing.html"
+                  class="text-slate-400 hover:text-white text-sm"
+                  >Digital Marketing</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-5">Contact Info</h4>
+            <ul class="space-y-4 text-slate-400 text-sm">
+              <li>Bangladesh</li>
+              <li>
+                <a href="tel:01975528709" class="hover:text-white"
+                  >01975-528709</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:sakibulislamp93bd@gmail.com"
+                  class="hover:text-white break-all"
+                  >sakibulislamp93bd@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-500 text-sm">
+            &copy; 2026 Sakibul Islam. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/chatbot.js"></script>
+  </body>
+</html>
